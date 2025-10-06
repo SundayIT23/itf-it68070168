@@ -25,7 +25,7 @@ function Proceed() {
         total_acc -= parseFloat(money.value)
         total_cash += parseFloat(money.value)
         line += 1
-        text_area.value += `${line}, Withdraw : ${money.value}, Curren account balance: ${total_acc}, Current cash balance: ${total_cash}\n`
+        text_area.value += `${line}, Withdraw : ${money.value}, Current account balance: ${total_acc}, Current cash balance: ${total_cash}\n`
     }else{
         text_area.value += `ERROR \n`
     }
