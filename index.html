@@ -7,61 +7,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav style="margin: ;">
         <p>68070168</p>
         <h1>ITF Website</h1>
         <p>Week 14</p>
     </nav>
-    <div>
-        Enter number: <input type="number" id="myinput" value="0">
-        <button onclick="add()">+1</button>
-    </div>
-    <textarea name="" id=""></textarea>
-    <div class="parent">
-        <div class="child">
-            <h1>Account Overview</h1>
-            <div class="account">
-                <h3>Account Information</h3>
-                <p>Name: Varattadon Moolnark</p>
-                <p>Type: Savings Account</p>
+    <div class="main">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div>
+                <img src="Blueeat.png" alt="Blue" width="125" height="125">
             </div>
-            <div class="balance">
-                <h3>Balance Info</h3>
-                <div class="box">
-                    <p>Current account balance</p><input type="number" name="" id="">
-                </div>
-                <div class="box">
-                    <p>Current cash balance</p><input type="number" name="" id="">
-                </div>
-                <button>Change</button>
-            </div>
-            <div class="bank">
-                <h3>Bank Operation</h3>
-                <select name="" id="">
-                    <option value="">Deposit</option>
-                    <option value="">Withdraw</option>
-                </select>
-                <input type="number">
-                <div>
-                    <button>Proceed</button>
-                </div>
+            <div>
+                <h1>ITF Simple Bank</h1>
+                <p>Welcome to my first HTML + CSS + JS website!</p>
             </div>
         </div>
-        <div class="child" style="margin-left: 3rem;">
-            <h1>Financial Tools</h1>
-            <div>
-                <h3>Currency Converter</h3>
-                <div>
-                    Input balance: <input type="number" name="" id="">
+        <hr>
+        <textarea name="" id="text_area"></textarea>
+        <div class="parent">
+            <div class="child">
+                <h1>Account Overview</h1>
+                <div class="account" style="display: flex; align-items: center; gap: 15px;">
+                    <div>
+                        <img src="user.png" alt="User" width="80" height="80">
+                    </div>
+                    <div>
+                        <h3>Account Information</h3>
+                        <p>Name: Varattadon Moolnark</p>
+                        <p>Type: Savings Account</p>
+                    </div>
                 </div>
-                <div>
-                    Output balance: <input type="number" name="" id="">
+                <div class="balance" style="display: flex; align-items: center; gap: 15px;">
+                    <div>
+                        <img src="briefcase.png" alt="Balanceinfo" width="80" height="80">
+                    </div>
+                    <div>
+                        <h3>Balance Info</h3>
+                        <div class="box" style="gap: 5px;">
+                            <p>Current account balance:</p><input type="number" id="currentAccount">
+                        </div>
+                        <div class="box" style="gap: 5px;">
+                            <p>Current cash balance:</p><input type="number" id="currentCash">
+                        </div>
+                        <button onclick="Change()">Change</button>
+                    </div>
                 </div>
-                Input currency: <select name="" id="">
-                    <option value="">USD</option>
-                    <option value="">THB</option>
-                </select>
-                <button>Convert</button>
+                <div class="bank" style="display: flex; align-items: center; gap: 15px;">
+                    <div>
+                        <img src="toolbox.png" alt="BankOp" width="80" height="80">
+                    </div>
+                    <div>
+                        <h3>Bank Operation</h3>
+                        <select name="" id="select">
+                            <option value="Deposit" id="deposit">Deposit</option>
+                            <option value="Withdraw" id="withdraw">Withdraw</option>
+                        </select>
+                        <input type="number">
+                        <div>
+                            <button onclick="Proceed()">Proceed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="child" style="margin-left: 3rem;">
+                <h1>Financial Tools</h1>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div><img src="coins.png" alt="coins" width="80" height="80"></div>
+                    <div>
+                        <h3>Currency Converter</h3>
+                        <div>
+                            Input balance: <input type="number" name="" id="">
+                        </div>
+                        <div>
+                            Output balance: <input type="number" name="" id="">
+                        </div>
+                        Input currency: <select name="" id="">
+                            <option value="">USD</option>
+                            <option value="">THB</option>
+                        </select>
+                        <button>Convert</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
